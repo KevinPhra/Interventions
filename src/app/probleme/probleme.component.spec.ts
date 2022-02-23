@@ -52,7 +52,12 @@ describe('ProblemeComponent', () => {
             let errors = zone.errors || {};
             expect(errors['minlength']).toBeFalsy();
             });
-            
+            it("#6| Zone PRÉNOM valide avec 2 espaces et 1 caractère", () =>{
+              let zone = component.problemeForm.controls['prenom'];
+              zone.setValue( " ".repeat(2) + "a".repeat(1));
+              let errors = zone.errors || {};
+              expect(errors['minlength']).toBeFalsy();
+              });
     
   // it('should create', () => {
   //   expect(component).toBeTruthy();
