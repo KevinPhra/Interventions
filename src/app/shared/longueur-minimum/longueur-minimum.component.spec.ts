@@ -19,7 +19,7 @@ describe('sansEspaces Validator', () => {
         let control = { value: '   je le veux   ' }
         let validatorFn = VerifierCaracteresValidator.longueurMinimum(3);
         let result= validatorFn(control as AbstractControl);
-        expect(result = null);
+        expect(result == null);
         });
 
     it('#10 une phrase avec 1 espace et 2 caracteres est invalide', () => {
