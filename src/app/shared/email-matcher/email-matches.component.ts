@@ -9,6 +9,3 @@ export class emailMatcherValidator {
         };
     }   
 }
-function courrielValides(c:AbstractControl): {[key: string]: boolean} | null {
-    
-}
